@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<title>MALLY SAPRE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/mallysapre.css">
+<link rel="stylesheet" href = "css/aos.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h4,h6, p {font-family: "Lato", sans-serif; color: black;}
+h3, h5 {font-family: "Lato", sans-serif; color: #14C2C0;}
+body, html {
+    height: 100%;
+    color: #14C2C0;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('images/img1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url(images/torg.jpg);
+    min-height: 400px;
+    min-width: 100px;
+\
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/code.png");
+    min-height: 400px;
+    min-width: 100px;
+}
+
+.bgimg-4 {
+    background-image: url("images/guitar.jpg");
+    min-height: 400px;
+    min-width: 100px;
+}
+
+.bgimg-5 {
+    background-image: url("images/ny.jpg");
+    min-height: 400px;
+    min-width: 100px;
+}
+
+.wide {letter-spacing: 10px;}
+.hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+
+.filler1{
+
+	height: 200px;
+}
+
+.filler2 {
+
+	height: 300px;
+}
+
+.filler3 {
+
+  height: 450px;
+}
+
+/*.empty {
+
+	height: 200px;
+}*/
+
+#education {
+
+   	height: 600px;
+	width: 100%;
+
+}
+
+p.ex, p.ex2, p.ex3, p.ex4 {
+
+  width: 50%;
+}
+
+
+
+.work img {
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.empty {
+
+	height: 50px;
+}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar" id="myNavbar">
+    <a class="bar-item button hover-text-teal hide-medium hide-large center" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="bar-item button"><i class="fa fa-home"></i> HOME</a>
+    <a href="#about" class="bar-item button hide-small"><i class="fa fa-user-circle"></i> ABOUT ME</a>
+    <a href="#education" class="bar-item button hide-small"><i class="fa fa-graduation-cap"></i> EDUCATION</a>
+    <a href="#experience" class="bar-item button hide-small"><i class="fa fa-suitcase"></i> EXPERIENCE</a>
+    <a href="#interests" class="bar-item button hide-small"><i class="fa fa-headphones"></i> INTERESTS</a>
+    <a href="#contact" class="bar-item button hide-small"><i class="fa fa-address-book"></i> CONTACT</a>
+    
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="bar-block white hide hide-large hide-medium">
+  	<a href="#about" class="bar-item button" onclick="toggleFunction()">ABOUT ME</a>
+    <a href="#about" class="bar-item button" onclick="toggleFunction()">EDUCATION</a>
+    <a href="#portfolio" class="bar-item button" onclick="toggleFunction()">EXPERIENCE</a>
+    <a href="#contact" class="bar-item button" onclick="toggleFunction()">INTERESTS</a>
+    <a href="#contact" class="bar-item button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 display-container opacity-min" id="home">
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="center padding-large black xlarge wide animate-opacity" data-aos = "zoom-in">mally <span class="hide-small">sapre</span></span>
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="content container padding-64" id="about">
+  <h3 class="center" data-aos = "fade-down">ABOUT ME</h3>
+  <div class="row">
+    <div class="col m4 center padding-large">
+      <img src="images/me3.jpg" class="round image" width="237" height="309" style = "margin-top: 24px;">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="col m6 hide-small padding-large" data-aos ="zoom-in">
+      <p>Hello, my name is Malhar Sapre (Mally) and welcome to my personal website.  I was born in Mumbai, India and I lived there for the first ten years of my life.  Approximately nine years ago, my family and I moved to Ashburn, Virginia ahd have lived there ever since.  I am currently in my third year of college at Virginia Tech, and I plan to graduate by the spring semester of 2019.  My objective right now is to find corporate exposure in the information technology field so I can apply my knowledge from my university courses.    </p>
+    </div>
+  </div>
+
+
+<div class = "filler1"> 
+
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 display-container opacity-min">
+  <div class="display-middle">
+    <span class="xxlarge text-white wide">EDUCATION</span>
+  </div>
+</div>
+
+<div class="content container padding-64" id="education">
+
+
+<div class = "major">
+<h3 data-aos = "fade-left">MAJOR</h3>
+
+<h5 data-aos = "fade-left">Business Information Technology<br>Concentration: Decision Support Systems</h5>
+
+
+    <!-- Hide this text on small devices -->
+
+
+      <p class = "ex" data-aos = "zoom-in">This program bridges the gap between business and computing.  There is a great balance between corI learn the process of designing, implementing,and manipulating computer systems to help managers make critical decisions for their business.  This course covers a broad spectrum of IT fields such as database management, artificial intelligence, interface design, and much more.  Some of the relavant course I have taken in this major include Business Analytics Modeling, Operations and Supply Chain Management, and Quantitative Methods.</p>
+      <div class="row-padding right" data-aos = "fade-up" data-aos-duration="1000">
+      <a href="https://vt.edu">
+      <img src="images/vtlogo.png"  width="325" height="325" style = "margin-top: -70px"">
+      </a>
+      </div>
+
+
+
+
+      <a href="https://bit.vt.edu/academics/undergraduate-programs/decision-support-systems.html">
+      <button class="button padding-large light-grey" style="margin-top:20px" a href = "">LEARN MORE</button>
+      </a>
+</div>
+
+
+
+
+<div class = "empty"></div>
+<div class = "minor">
+<h3 data-aos = "fade-left">MINOR</h3>
+
+<h5 data-aos = "fade-left">Computer Science</h5>
+
+
+    <!-- Hide this text on small devices -->
+
+      <p class = "ex2" data-aos = "zoom-in">This minor covers all of the fundamentals of computer science.  It develops a strong foudnation in concepts such as algorithm development and software design. I not only learn the syntax of computer code, but also how it can be implemented for several practical application.  Some of the courses covered in this minor include Object Oriented Programming, Data Structures and Algorithms, and Computer Organization. </p>
+
+      <a href="https://www.cs.vt.edu/undergraduate/minors">
+      <button class="button padding-large light-grey" style="margin-top:20px">LEARN MORE</button>
+      </a>
+</div>
+
+
+</div>
+
+
+
+<div class = "filler3"> 
+
+</div>
+
+<div class="bgimg-3 display-container opacity-min">
+  <div class="display-middle">
+    <span class="xxlarge text-white wide">EXPERIENCE</span>
+  </div>
+</div>
+<div class="content container padding-64" id="experience">
+
+<div class = "work">
+
+<h3 class = "center" data-aos = "fade-down">JOBS</h3>
+
+<div class = "citi" data-aos = "fade-down">
+<a href="http://www.citi-us.com/">
+<img src="https://www.purchasingconnection.org/cms/lib/MN07001522/Centricity/Domain/170/CITI.jpg">
+</a>
+</div>
+
+<h5 class = "center" data-aos = "fade-down">QA Analyst Intern - CITI (Summer 2016)</h4>
+
+<p class = "center" style="display: block;margin-left: auto;margin-right: auto;width: 55%;" data-aos = "zoom-in">During this internship, I got to work closely with CITI's QA Testing Team on their ManageID software.  My responsibility was to create and test sample test cases for the software for different clients.  Most of the tests I ran were to measure performance.  I conducted several load, spike, and stress tests on the product before it was ready for the clients.  I also administered a few tests for their relational database and the user interface.  Apart from testing, I worked closely with the Information Technology team to make network configurations on the entry-gate kiosks for CITI's PACS clients.  Sometimes, I was also given the task to help product managers make a request-for-proposal (RFP) report for the suppliers. </p>
+
+</div>
+
+
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="content container padding-64" id="portfolio">
+  <h3 class="center" data-aos = "fade-down">TECHNICAL SKILLS</h3>
+
+  <div class="empty"></div>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="row-padding center">
+    <div class="col m3" data-aos = "fade-left" data-aos-duration="1000">
+      <img src="images/java.png">
+    </div>
+
+    <div class="col m3" data-aos = "fade-left" data-aos-duration="1000">
+      <img src="images/javascript.png">
+    </div>
+
+    <div class="col m3" data-aos = "fade-left" data-aos-duration="1000">
+      <img src="images/html.png">
+    </div>
+
+    <div class="col m3" data-aos = "fade-left" data-aos-duration="1000">
+      <img src="images/css.png">
+    </div>
+  </div>
+
+  <div class="row-padding center section">
+    <div class="col m3" data-aos = "fade-left" data-aos-duration="1000">
+      <img src="images/office.png">
+    </div>
+
+    <div class="col m5" data-aos = "fade-left" data-aos-duration="1000">
+      <img src="images/vba.png" style="margin-left: 245px">
+    </div>
+    
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button large black display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div>
+
+
+<div class="bgimg-4 display-container opacity-min">
+  <div class="display-middle">
+    <span class="xxlarge text-white wide">INTERESTS</span>
+  </div>
+</div>
+
+<div class="content container padding-64" id="interests">
+
+
+<div class = "music">
+
+      <div class="row-padding right">
+      <audio controls>
+    <source src="music/Ramble.ogg" type="audio/ogg">
+  <source src="music/Ramble.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+      </div>
+<h3 class = "music" data-aos = "fade-left">MUSIC</h3>
+
+
+                  <div class="row-padding right">
+      <audio controls>
+    <source src="music/Astray.ogg" type="audio/ogg">
+  <source src="music/Astray.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+      </div>
+
+
+
+<p class = "ex3" data-aos = "zoom-in">I have been playing the guitar for close to 10 years now and I am very passionate about music in general.  I started off with learning rock guitar and later in high school, I took up classical and jazz guitar as well.  Apart from playing guitar, I also love to record and produce my own songs. Please feel free to check out some of parts of my music on the right.  Some of my favorite artists include Jimi Hendrix, Pink Floyd, Glass Animals, and many more.   
+
+</p>
+
+
+</div>
+
+
+<div class="soccer">
+<h3>SOCCER</h3>
+
+<p class = "ex4" data-aos = "zoom-in">I really enjoy playing and watching soccer.  I picked up the sport when I was eight or so and have loved it ever since.  Every year at Virginia Tech, I take part in the intramural soccer teams with my friends.  My favorite team is Manchester United and some of my all time favorite players include Wayne Rooeny, Ruud Van Nistelrooy, and Ryan Giggs.</p>
+
+</div>
+
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-5 display-container opacity-min">
+  <div class="display-middle">
+     <span class="xxlarge text-white wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="content container padding-64" id="contact">
+  <h3 class="center" data-aos = "fade-down">GET IN TOUCH </h3>
+
+  <div class="empty"></div>
+
+  <div class="row-padding center">
+
+
+    <div class="col m2" data-aos = "fade-left" data-aos-duration="1000">
+
+      <a href="https://www.linkedin.com/in/malhar-sapre-b87601104/">
+      <img src="images/linkedin.png" class="hover-opacity">
+      </a>
+    </div>
+
+     <div class="col m2" data-aos = "fade-left" data-aos-duration="1000">
+
+      <a href="mailto:mally7@vt.edu?Subject=Hello%20again" target="_top">
+      <img src="images/gmail.png" class="hover-opacity">
+      </a>
+    </div>
+
+    <div class="col m2" data-aos = "fade-left" data-aos-duration="1000">
+      <a href="https://www.facebook.com/mally.sapre">
+      <img src="images/facebook.png" class="hover-opacity">
+      </a>
+    </div>
+
+    <div class="col m2" data-aos = "fade-left" data-aos-duration="1000">
+
+      <a href="https://twitter.com/mally_sapre">
+      <img src="images/twitter.jpg" class="hover-opacity">
+      </a>
+    </div>
+
+    <div class="col m2" data-aos = "fade-left" data-aos-duration="1000">
+
+      <a href="https://www.instagram.com/mallysapre/">
+      <img src="images/instagram.png" class="hover-opacity">
+      </a>
+    </div>
+
+    <div class="col m2" data-aos = "fade-left" data-aos-duration="1000">
+
+      <a href="https://open.spotify.com/user/1221643004">
+      <img src="images/spotify.png" class="hover-opacity">
+      </a>
+    </div>
+
+    <div class="filler1"> </div>
+
+      <a href="images/Malhar P. Sapre Résumé.pdf" download>
+      <button class="button padding-large light-grey" style="margin-top:20px">VIEW MY RÉSUMÉ</button>
+      </a>
+
+
+
+  </div>
+
+
+  </div>
+</div>
+
+ 
+<!-- Add Google Maps -->
+<script type="text/javascript" src = "js/aos.js"></script>
+<script>
+
+AOS.init();
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        navbar.className = "bar" + " card-2" + " animate-top" + " teal";
+    } else {
+        navbar.className = navbar.className.replace(" card-2 animate-top teal", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
